@@ -10,7 +10,7 @@ if (!exists("SCC")) {
 #make subset of NEI for baltimore city
 baltimore_city  <- NEI[NEI$fips=="24510", ]
 
-# Aggregate
+# Aggregate baltimore city
 aggregated_bc <- aggregate(Emissions ~ year, baltimore_city, sum)
 
 #make the plot
